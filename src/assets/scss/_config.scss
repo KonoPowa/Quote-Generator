@@ -1,0 +1,66 @@
+$black: #010000;
+$white: #ffffff;
+$lightGrey: #e6e6e6;
+$darkGrey: #333;
+$red: #ff1755;
+
+
+
+/* Fonts -
+
+regular 400
+regular 400 Italic
+bold 700
+bold 700 Italic
+
+*/
+@mixin transition($e) {
+  -webkit-transition: $e;
+    -moz-transition: $e;
+        transform: $e;
+}
+#quote-div{
+  margin-top: 15%;
+}
+
+#quote{
+  text-align: center;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(to bottom, #202020, #111119) ;
+}
+
+/*body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: $black;
+  font-weight: 400;
+  font-style: normal;
+  background: linear-gradient(to bottom right,$lightGrey,lightblue);
+}*/
+
+a{
+  text-decoration: none;
+  @include transition(.4s ease-in-out);
+  cursor: pointer;
+
+    &:hover{
+      color: red;
+      @include transition(.4s ease-in-out);
+    }
+}
+
+  .container-fluid{
+    line-height: 24px;
+  }
+
+//Mixins
+
+@mixin translateY($e){
+  -webkit-transform: translateY($e);
+    -moz-transform:translateY($e);
+        transform: translateY($e);
+}
