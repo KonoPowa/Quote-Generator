@@ -15,16 +15,16 @@ import{
 
 function App() {
   return (
-    <Router>
-
-
-        <Route exact path="/" component={Homepage} />
-
-
-        {/*<Footer />*/}
     
 
-    </Router>
+
+        <Homepage/>
+
+
+       
+    
+
+    
   );
 }
 
